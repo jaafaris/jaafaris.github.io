@@ -80,10 +80,18 @@
             <div class="h5">Implementation of FPGA-Based Online FFT Analyzer with the Demonstration of Signal and it’s FFT on Basic Monitors</div>
             <p class="category">Isfahan University of Technology</p>
             
-            <p style="text-align: justify;">In this project, we designed a core that calculated the FFT of a signal and showed the results on a monitor. First, in the transmitter part, we generated an input signal using MATLAB. It should be noted that the signal could come from any other digital resources. Then, we transferred the signal to a receiver using a USB port by the UART protocol. Our receiver is formed by an FPGA board and a monitor. Since there is no prepared module in FPGA to receive UART-based signals, we had to implement a code in FPGA for receiving data. Then, we calculated the FFT of the signal in FPGA. Thereafter, since the signal was transferred to the monitor by VGA cable, we also wrote another code to translate the signal into a format that is based on the VGA protocol.</p>
-            <p>Software: Xilinx, MATLAB</p>
-            <p>Hardware: FPGA board (Spartan 6), monitor</p>
-            <p>Course: FPGA (Verilog) Programing</p>
+<p style="text-align: justify;"><strong>Real-Time FFT Processing and Display with FPGA and UART Communication</strong></p>
+
+<p style="text-align: justify;">This project aimed to design and implement a core that computes the Fast Fourier Transform (FFT) of a signal and displays the resulting frequency spectrum on a monitor. To begin, in the transmitter section, we generated an input signal using MATLAB, though this signal could be sourced from any compatible digital resource. The signal was then transmitted to the receiver through a USB port using the UART protocol, enabling seamless data transfer.</p>
+
+<p style="text-align: justify;">The receiver setup included an FPGA board (Spartan 6) and a monitor for visualizing the FFT results. Since the FPGA does not have a prebuilt module to handle UART-based signals, we implemented custom code to enable the FPGA to receive data via the UART protocol effectively. After successfully transferring the signal data, the FPGA core computed the FFT in real time, allowing for efficient frequency analysis directly on the board.</p>
+
+<p style="text-align: justify;">Once the FFT was calculated, the next challenge was to transmit the results to a monitor. Using a VGA cable for the display connection, we had to develop additional code to convert the processed FFT data into a format compatible with the VGA protocol, ensuring that the frequency spectrum was accurately represented on the monitor. This VGA-compatible code enabled a seamless real-time visualization of the signal’s frequency components, creating a powerful tool for signal analysis.</p>
+
+<p style="text-align: justify;"><strong>Software:</strong> Xilinx, MATLAB</p>
+<p style="text-align: justify;"><strong>Hardware:</strong> FPGA board (Spartan 6), Monitor</p>
+<p style="text-align: justify;"><strong>Course:</strong> FPGA (Verilog) Programming</p>
+
 
           </div>
         </div>
